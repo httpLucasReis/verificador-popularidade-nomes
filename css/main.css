@@ -1,0 +1,42 @@
+:root {
+    --main-bg-color : #B6C4FB;
+    --title-color : #6479C4;
+    --text-color : #1B2139;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--main-bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--title-color);
+    font-family: 'Roboto', sans-serif;
+
+}
+
