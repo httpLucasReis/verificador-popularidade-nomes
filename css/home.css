@@ -74,3 +74,15 @@ header {
 .search button:hover{
     background-color: rgba(129, 129, 129, 0.349);
 }
+
+#result {
+    display: flex;
+    align-items: center;
+}
+
+#result ul{
+    border: 2px solid black;
+    margin: 0px 25px;
+
+    padding: 25px;
+}
