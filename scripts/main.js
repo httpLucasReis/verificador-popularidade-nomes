@@ -1,4 +1,5 @@
 const result = document.querySelector("#result")
+
 document.querySelector("button").addEventListener("click", getNames);
 
 
@@ -7,11 +8,15 @@ function getNames(){
     result.innerHTML = '';
 
     const name = document.querySelector("input").value;
-
+    
     if(name.length == 0){
         alert("Campo vazio!");
         return;
     }
+    
+    // Título dinâmico
+    const title = document.createElement("h1");
+    title.textContent = `Popularidade do nome ${name}`
 
     const url = `https://servicodados.ibge.gov.br/api/v2/censos/nomes/${name}`;
 
