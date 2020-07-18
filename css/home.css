@@ -139,6 +139,8 @@ footer {
     justify-content: center;
 
     color: var(--title-color);
+
+    padding: 10px;
     
 }
 
