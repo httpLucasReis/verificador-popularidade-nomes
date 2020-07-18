@@ -20,6 +20,7 @@ function getNames(){
     
     // Título dinâmico
     const title = document.createElement("h1");
+    title.classList.add("title");
     title.textContent = `Popularidade do nome ${name}`
 
     const url = `https://servicodados.ibge.gov.br/api/v2/censos/nomes/${name}`;

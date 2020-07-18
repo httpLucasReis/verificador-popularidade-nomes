@@ -77,11 +77,16 @@ header {
     background-color: rgba(129, 129, 129, 0.349);
 }
 
+.title {
+    text-align: center;
+}
+
 #result {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 
 h1{
     margin-bottom: 10px;
@@ -92,6 +97,8 @@ table {
     border-spacing: 0;
 
     text-align: center;
+
+    margin-bottom: 25px;
 }
 
 table thead{
@@ -124,3 +131,25 @@ table tbody td:nth-child(2n+1){
     background-color:#bec2c5 ;
 }
 
+footer {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--title-color);
+    
+}
+
+@media(max-width: 740px){
+   #result h1{
+       font-size: 20px;
+   }
+}
+
+@media(max-width: 480px){
+    #result h1 {
+        font-size: 17px;
+    }
+}
